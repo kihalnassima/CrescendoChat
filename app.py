@@ -8,7 +8,6 @@ from fuzzywuzzy import fuzz, process
 from langchain_openai import ChatOpenAI
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
-import config
 from deep_translator import GoogleTranslator  
 
 # Set page configuration at the very beginning
@@ -17,8 +16,6 @@ st.set_page_config(page_title="💬 CrescendoChat")
 # Initialize the spell checker
 spell = SpellChecker()
 
-# Set the OpenAI API key as an environment variable
-# os.environ["OPENAI_API_KEY"] = config.OPENAI_API_KEY
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Display a welcome message
