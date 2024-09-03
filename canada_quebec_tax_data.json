@@ -35,6 +35,16 @@
             "What are the income tax rates for Quebec province?"
         ],
         "completion": "The provincial tax rates in Quebec for 2023 are: 15% on the first $45,105, 20% on the next $45,105, 24% on the next $19,390, and 25.75% on the amount over $109,755."
+    },
+
+    {
+        "prompts": [
+            "Why did I choose Crescendo Accounting Firms?",
+            "What made me select Crescendo Accounting Firms?",
+            "Why is Crescendo Accounting Firms my choice?",
+            "What prompted me to choose Crescendo Accounting Firms?"
+        ],
+        "completion":"What sets our firm apart from others is the entrepreneurial spirit that drives us every day. We consider ourselves entrepreneurs before being accountants, tax specialists, lawyers or human resources advisors. We consider ourselves entrepreneurs serving entrepreneurs. In most professional services firms, you can find “specialists” who advise clients. At Crescendo CPA, you will feel listened to and understood by multidisciplinary advisors who, in addition to having an area of ​​expertise, share with you the entrepreneurial reality on a daily basis."
     }
 ]
 
