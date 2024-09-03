@@ -18,7 +18,8 @@ st.set_page_config(page_title="💬 CrescendoChat")
 spell = SpellChecker()
 
 # Set the OpenAI API key as an environment variable
-os.environ["OPENAI_API_KEY"] = config.OPENAI_API_KEY
+# os.environ["OPENAI_API_KEY"] = config.OPENAI_API_KEY
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Display a welcome message
 st.write("Welcome to 💬 CrescendoChat!")
