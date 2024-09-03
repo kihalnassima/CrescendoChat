@@ -3,6 +3,7 @@ import streamlit as st
 import openai
 import json
 import re
+from dotenv import load_dotenv
 from spellchecker import SpellChecker
 from fuzzywuzzy import fuzz, process
 from langchain_openai import ChatOpenAI
@@ -10,13 +11,16 @@ from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from deep_translator import GoogleTranslator  
 
+# Load environment variables from the .env file
+load_dotenv()
+
 # Set page configuration at the very beginning
 st.set_page_config(page_title="💬 CrescendoChat")
 
 # Initialize the spell checker
 spell = SpellChecker()
 
-# Set the OpenAI API key from the environment variable
+# Set the OpenAI API key from the .env file
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Display a welcome message
@@ -170,7 +174,7 @@ if st.session_state.get("model_initialized"):
     # Initialize ChatOpenAI with the API key and model explicitly specified
     llm = ChatOpenAI(
         model_name="gpt-3.5-turbo",  # Ensure the model is specified
-        openai_api_key=os.getenv("OPENAI_API_KEY")  # Pass the API key explicitly
+        openai_api_key=openai.api_key  # Use the API key from dotenv
     )
 
     chat_chain = LLMChain(llm=llm, prompt=prompt_template)
