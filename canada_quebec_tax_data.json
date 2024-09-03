@@ -1,0 +1,40 @@
+[
+    {
+        "prompts": [
+            "What is the GST rate in Canada?",
+            "Can you tell me the GST rate in Canada?",
+            "How much is the GST in Canada?",
+            "What's the GST percentage in Canada?",
+            "What’s the current GST rate in Canada?"
+        ],
+        "completion": "The GST rate in Canada is 5%."
+    },
+    {
+        "prompts": [
+            "When is the tax deadline in Canada?",
+            "When do I need to file my taxes in Canada?",
+            "What’s the deadline for tax filing in Canada?",
+            "By when should I submit my taxes in Canada?"
+        ],
+        "completion": "The tax deadline in Canada is usually April 30."
+    },
+    {
+        "prompts": [
+            "What is the federal tax rate in Canada for 2023?",
+            "Can you tell me the federal tax rate in Canada for 2023?",
+            "What’s the federal income tax rate for 2023 in Canada?",
+            "How much is the federal tax rate in Canada for 2023?"
+        ],
+        "completion": "The federal tax rate in Canada for 2023 is 15% on the first $53,359 of taxable income."
+    },
+    {
+        "prompts": [
+            "What are the provincial tax rates in Quebec?",
+            "Can you tell me the provincial tax rates in Quebec?",
+            "How much are the provincial taxes in Quebec?",
+            "What are the income tax rates for Quebec province?"
+        ],
+        "completion": "The provincial tax rates in Quebec for 2023 are: 15% on the first $45,105, 20% on the next $45,105, 24% on the next $19,390, and 25.75% on the amount over $109,755."
+    }
+]
+
